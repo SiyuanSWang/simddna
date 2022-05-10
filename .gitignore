@@ -1,0 +1,7 @@
+build/
+dist/
+simddna.egg-info/
+example/*.fastq
+example/Reg8/ngs_barcode_calls_*.pkl
+example/Reg8/simd_barcode_calls.pkl
+example/Reg8/viable-reads-*.pkl
