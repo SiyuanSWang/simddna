@@ -1,20 +1,24 @@
+# This is a script that interprets data stored by the SIMD||DNA 
+# scheme, as read out by next-generation sequencing
+# Treat this file like a template for analyzing raw NGS data
+
 from simddna.NGSanalysis import *
 
 if __name__ == "__main__":
 
 	##### ===== Parameters specific to run ===== #####
 
-	# Algorithm "rule110" or "counting"?
+	# Algorithm: "rule110" or "counting"?
 	Algorithm = "counting" 
 	
-	# List all expected registers in the data
+	# List all expected registers in the data (see registers.py)
 	RegisterNames = ["Reg8"]
 
 	# Names of paired sequencing files (extension must be .fastq)
 	Filenames = ["SIMDCountR8_S2_L001_R1_001.fastq",\
 				 "SIMDCountR8_S2_L001_R2_001.fastq"]
 
-	# NGS barcodes used in this run, 1-indexed
+	# NGS barcodes used in this run, 1-indexed, 72 possible
 	BarcodesN = [9,10]
 	
 	# Does the read region cover the entire register?

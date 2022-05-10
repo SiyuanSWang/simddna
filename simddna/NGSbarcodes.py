@@ -1,3 +1,12 @@
+# These are the NGS barcodes used to label each SIMD||DNA
+# computational product within the NGS run
+
+# These barcodes are the 11-2 set from Hawkins et al. 
+# Indel-correcting DNA barcodes for high-throughput sequencing
+# https://github.com/hawkjo/freebarcodes
+
+# These variables get loaded as a module in NGSanalysis.py
+
 NGSBarcodes = [\
 "AACAACAACAC", "AACAACGGTGG", "AACACCTTCTT", "AACATTGAGCC", \
 "AACCGAGAAGT", "AACCGTCCACC", "AAGAAGCTCCG", "AAGACCATAGG", \

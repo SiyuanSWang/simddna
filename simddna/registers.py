@@ -1,4 +1,8 @@
-# All constant regions and cells of registers
+# This file contains all constant regions and cells of registers
+# used in SIMD||DNA
+# Note that sequences on the same register can be different
+# between the two algorithms due to different encodings
+# These variables get loaded as a module in NGSanalysis.py
 
 from simdlib.SIMDlib import dna_complement
 
