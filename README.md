@@ -12,14 +12,12 @@ simddna requires Biopython for sequence alignment and parsing FASTQ files:
 
 ```
 pip install Biopython
-
 ```
 
 Installing simddna:
 
 ```
 python setup.py install
-
 ```
 
 ## Typical Workflow
