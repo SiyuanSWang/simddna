@@ -1,5 +1,3 @@
-# The functions all_n_subs and all_n_dels yield generators. 
-# Be sure to list() and set() to remove duplicates.
 from itertools import combinations, product
 import numpy as np
 import math
@@ -14,6 +12,8 @@ import copy
 n_bits = 4
 
 def all_n_subs(word, i):
+    # Produces a generator
+    # Be sure to list() and set() to remove duplicates
     # Returns all possible mismatches up to i subs from given seq
     # From stackoverflow #11679855
     for d in range(1, i+1):
@@ -26,6 +26,8 @@ def all_n_subs(word, i):
                 yield "".join(poss)   
 
 def all_n_dels(seq, n):
+    # Produces a generator
+    # Be sure to list() and set() to remove duplicates.
     # All possible deletions up to n subs from given seq
     for d in range(1, n+1):
         for locs in combinations(range(len(seq)), d):
@@ -33,7 +35,7 @@ def all_n_dels(seq, n):
             yield "".join(deletion)
                 
 def all_n_ins(seq, n):
-    """Returns set of all sequences with up to nins insertions from given seq."""
+    # Returns set of all sequences with up to nins insertions from given seq.
     # From github/hawkjo/champ/seqtools.py
     outset = set()
     bases = "ACGT"
