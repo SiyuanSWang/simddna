@@ -26,7 +26,6 @@ Place the raw NGS read files (.fastq or .fastq.gz) into a working directory with
 
 ```
 python ngsrunanalysis.py
-
 ```
 This produces the following .pkl files:
 - Viable reads: Reads that pass the criteria for analysis
